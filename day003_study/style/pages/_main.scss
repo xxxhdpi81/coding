@@ -1,0 +1,256 @@
+.visual {
+    .cover {
+        .circle {
+            position: absolute;
+            /*postion: relative; 하면 헤더 밑으로 가지를 않음
+             */
+
+            top: 0;
+            left: 0;
+            z-index: -10;
+            max-width: 50%;
+            @include screen-lg {
+                width: 85%;
+                height: 85%;
+            }
+        }
+
+        .dot {
+            position: absolute;
+            top: 12.1%;
+            left: 0;
+            max-width: 30%;
+            @include screen-lg {
+                height: 50%;
+                width: 50%;
+            }
+            @include screen-md {
+                display: none;
+            }
+        }
+
+        .bike {
+            position: absolute;
+            left: 9%;
+            /*
+            bottom: 0;
+            */
+            /*
+            top: 100%;
+             */
+            top: 350px;
+            max-width: 50%;
+            @include screen-lg {
+                width: 70%;
+                height: 70%;
+                position: absolute;
+                left: 2%;
+                @include screen-md {
+
+                }
+
+                @include screen-sm {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+
+    .container {
+        height: 940px;
+
+        .login-section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+
+            .group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                .txt {
+                    margin-bottom: 70px;
+
+                    h1 {
+                        font-size: 42px;
+                        font-weight: 400;
+                        color: #2b2b2b;
+                        line-height: 1.4;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #8e9296;
+                        line-height: 1.4;
+                        margin-top: 12px;
+                    }
+                }
+
+                .log-in {
+                    label {
+                        display: flex;
+                        flex-direction: column;
+
+                        input {
+                            background-color: #fff;
+                            border: none;
+                            border-bottom: 1px solid #d8d8d8;
+                            font-size: 14px;
+                            color: #8e9296;
+
+                            &:focus {
+                                outline: 0;
+                            }
+
+                            height: 48px;
+                            width: 320px;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .txt {
+            margin-bottom: 70px;
+
+            h1 {
+                font-size: 42px;
+                font-weight: 400;
+                color: #2b2b2b;
+                line-height: 1.4;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #8e9296;
+                line-height: 1.4;
+                margin-top: 12px;
+            }
+
+        }
+
+        .log-in {
+            label {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    background-color: #fff;
+                    border: none;
+                    border-bottom: 1px solid #d8d8d8;
+                    font-size: 14px;
+                    color: #8e9296;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    height: 48px;
+                    width: 320px;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        .btn {
+            width: 320px;
+            height: 48px;
+            background-color: #36e790;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                color: #fff;
+                font-size: 14px;
+            }
+
+            &:hover {
+                background-color: #2bcd7d;
+            }
+        }
+
+    }
+}
+
+.usage {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 115px;
+        .bike-usage {
+            height: 980px;
+
+
+            h1 {
+                font-size: 42px;
+                color: #2b2b2b;
+                line-height: 1.4;
+                font-weight: 400;
+            }
+            ul {
+                width: 590px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 40px;
+                li {
+                    width: 285px;
+                    height: 280px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    .title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #2b2b2b;
+                        margin: 20px 0 8px 0;
+                    }
+                    .des {
+                        color: #8e9296;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    .more {
+                        color: #8e9296;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: 33px;
+
+                        a {
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+

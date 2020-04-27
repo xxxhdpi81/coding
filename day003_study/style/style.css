@@ -1,0 +1,283 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.4; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  word-break: keep-all; }
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+  #header .top-header .container {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #header .top-header .container .lang a {
+      font-size: 14px;
+      color: #2b2b2b;
+      margin-right: 7px; }
+    #header .top-header .container .member .em {
+      font-size: 14px;
+      color: #2b2b2b;
+      margin-right: 7px; }
+    #header .top-header .container .member .usage {
+      font-size: 12px;
+      color: #8e9296;
+      margin-right: 7px; }
+
+.main-header {
+  height: 48px; }
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center; }
+
+.main-header .container .logo a {
+  display: flex;
+  align-items: center; }
+
+.main-header .container .nav ul {
+  display: flex;
+  justify-content: row; }
+
+.main-header .container .nav ul li {
+  font-size: 16px;
+  color: #2b2b2b;
+  font-weight: 500;
+  margin-left: 50px; }
+
+.visual .cover .circle {
+  position: absolute;
+  /*postion: relative; 하면 헤더 밑으로 가지를 않음
+   */
+  top: 0;
+  left: 0;
+  z-index: -10;
+  max-width: 50%; }
+  @media only screen and (max-width: 1200px) {
+    .visual .cover .circle {
+      width: 85%;
+      height: 85%; } }
+.visual .cover .dot {
+  position: absolute;
+  top: 12.1%;
+  left: 0;
+  max-width: 30%; }
+  @media only screen and (max-width: 1200px) {
+    .visual .cover .dot {
+      height: 50%;
+      width: 50%; } }
+  @media only screen and (max-width: 992px) {
+    .visual .cover .dot {
+      display: none; } }
+.visual .cover .bike {
+  position: absolute;
+  left: 9%;
+  /*
+  bottom: 0;
+  */
+  /*
+  top: 100%;
+   */
+  top: 350px;
+  max-width: 50%; }
+  @media only screen and (max-width: 1200px) {
+    .visual .cover .bike {
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      left: 2%; } }
+  @media only screen and (max-width: 1200px) and (max-width: 768px) {
+    .visual .cover .bike {
+      display: none; } }
+
+.visual .container {
+  height: 940px; }
+  .visual .container .login-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    .visual .container .login-section .group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .visual .container .login-section .group .txt {
+        margin-bottom: 70px; }
+        .visual .container .login-section .group .txt h1 {
+          font-size: 42px;
+          font-weight: 400;
+          color: #2b2b2b;
+          line-height: 1.4; }
+        .visual .container .login-section .group .txt p {
+          font-size: 18px;
+          font-weight: 400;
+          color: #8e9296;
+          line-height: 1.4;
+          margin-top: 12px; }
+      .visual .container .login-section .group .log-in label {
+        display: flex;
+        flex-direction: column; }
+        .visual .container .login-section .group .log-in label input {
+          background-color: #fff;
+          border: none;
+          border-bottom: 1px solid #d8d8d8;
+          font-size: 14px;
+          color: #8e9296;
+          height: 48px;
+          width: 320px;
+          margin-top: 4px; }
+          .visual .container .login-section .group .log-in label input:focus {
+            outline: 0; }
+  .visual .container .txt {
+    margin-bottom: 70px; }
+    .visual .container .txt h1 {
+      font-size: 42px;
+      font-weight: 400;
+      color: #2b2b2b;
+      line-height: 1.4; }
+    .visual .container .txt p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #8e9296;
+      line-height: 1.4;
+      margin-top: 12px; }
+  .visual .container .log-in label {
+    display: flex;
+    flex-direction: column; }
+    .visual .container .log-in label input {
+      background-color: #fff;
+      border: none;
+      border-bottom: 1px solid #d8d8d8;
+      font-size: 14px;
+      color: #8e9296;
+      height: 48px;
+      width: 320px;
+      margin-top: 4px; }
+      .visual .container .log-in label input:focus {
+        outline: 0; }
+  .visual .container .btn {
+    width: 320px;
+    height: 48px;
+    background-color: #36e790;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .visual .container .btn a {
+      color: #fff;
+      font-size: 14px; }
+    .visual .container .btn:hover {
+      background-color: #2bcd7d; }
+
+.usage .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 115px; }
+  .usage .container .bike-usage {
+    height: 980px; }
+    .usage .container .bike-usage h1 {
+      font-size: 42px;
+      color: #2b2b2b;
+      line-height: 1.4;
+      font-weight: 400; }
+    .usage .container .bike-usage ul {
+      width: 590px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px; }
+      .usage .container .bike-usage ul li {
+        width: 285px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; }
+        .usage .container .bike-usage ul li .title {
+          font-size: 20px;
+          font-weight: 500;
+          color: #2b2b2b;
+          margin: 20px 0 8px 0; }
+        .usage .container .bike-usage ul li .des {
+          color: #8e9296;
+          font-size: 14px;
+          font-weight: 400; }
+        .usage .container .bike-usage ul li .more {
+          color: #8e9296;
+          font-size: 14px;
+          font-weight: 400;
+          margin-top: 33px; }
+          .usage .container .bike-usage ul li .more a img {
+            width: 20px;
+            height: 20px; }
+        .usage .container .bike-usage ul li img {
+          width: 80px;
+          height: 80px; }
+
+/*# sourceMappingURL=style.css.map */

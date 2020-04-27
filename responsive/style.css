@@ -1,0 +1,24 @@
+.box {
+    border: 5px solid;
+}
+
+
+
+/* 화면의 크기가 800보다 클때 display: none
+
+@media(min-width:800px) {
+    .box {
+        display: none;
+    }
+}
+*/
+
+
+/* 화면의 크기가 800보다 작을때 display: none */
+
+@media(min-width:800px) {
+    .box {
+        display: none;
+    }
+}
+
