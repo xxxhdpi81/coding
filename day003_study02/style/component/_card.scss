@@ -1,0 +1,160 @@
+
+body {
+    background-color: #1C1D21;
+}
+
+.container-for-card {
+    width: 1800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    .wrap {
+        width: 20%;
+    }
+
+    .card {
+        margin: 10px;
+        border-radius: 8px;
+        background-color: #393C42;
+        overflow: hidden;
+
+        .thum {
+            height: 220px;
+            background-color: #2C3035;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                background-size: contain;
+            }
+        }
+
+        .text {
+            .txt-top {
+                height: 130px;
+                padding: 15px 18px;
+                display: flex;
+                flex-direction: column;
+
+                .card-title {
+                    a {
+                        font-size: 18px;
+                        color: #B5B6B7;
+                        font-weight: 400;
+                    }
+
+                }
+
+                .desc {
+                    font-size: 14px;
+                    color: #717174;
+                    margin-top: 10px;
+                    line-height: 1.4;
+                }
+
+                .detail {
+
+                    display: flex;
+                    flex-direction: row;
+                    flex: 1;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+
+                    p {
+                        a {
+                            font-size: 13px;
+                            color: #717174;
+                        }
+                        a:hover {
+                            color: #9b9ba1;
+                        }
+
+                    }
+                    .tag {
+                        margin-left: 20px;
+                        display: flex;
+                        justify-content: center;
+
+                        .tag-01 {
+                            a {
+                                font-size: 13px;
+                                color: #717174;
+                                &:hover {
+                                    color: #9b9ba1;
+                                }
+                            }
+
+                        }
+                        .tag-02 {
+                            margin-left: 10px;
+                            a {
+                                font-size: 13px;
+                                color: #717174;
+                                &:hover {
+                                    color: #9b9ba1;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .info {
+                height: 50px;
+                border-top: 1px solid #484849;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 15px;
+
+                .avatar-group {
+                    display: flex;
+                    align-items: center;
+
+                    .avatar {
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 4px;
+                        overflow: hidden;
+                    }
+
+                    .author {
+                        margin-left: 10px;
+                        position: relative;
+                        top: 2px;
+
+                        a {
+                            color: #717174;
+                            font-size: 12px;
+                            &:hover {
+                                color: #9b9ba1;
+                            }
+                        }
+
+
+
+                    }
+                }
+
+                .bookmark-group {
+                    display: flex;
+                    align-items: center;
+
+                    .bookmark {
+                        color: #717174;
+                    }
+
+                    .more-vert {
+                        color: #717174;
+                    }
+                }
+            }
+
+        }
+    }
+}
+

@@ -25,7 +25,7 @@
         .usage {
           font-size: 12px;
           color: #8e9296;
-          margin-right: 7px;
+          margin: 0 6px;
         }
       }
     }
@@ -58,9 +58,13 @@
   justify-content: row;
 }
 
-.main-header .container .nav ul li {
+.main-header .container .nav ul li a {
   font-size: 16px;
   color: #2b2b2b;
   font-weight: 500;
   margin-left: 50px;
+  &:hover {
+    color: $main-color;
+    transition: 0.2s;
+  }
 }
