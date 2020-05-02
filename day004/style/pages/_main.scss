@@ -5,9 +5,10 @@
         top: 0;
         width: 953px;
         @include screen-sm {
-            width: 160%;
+            width: 140%;
             right: 5%;
         }
+
 
 
         .circle {
@@ -24,15 +25,14 @@
             position: absolute;
             right: -3%;
             bottom: -5%;
-            @include screen-sm {
-                width: 84%;
-            }
+            max-width: 89%;
         }
 
     }
 
     .container {
         height: 900px;
+        position: relative;
 
         .login-section {
             margin-top: 70px;
@@ -41,21 +41,25 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-
+            @include screen-sm {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
 
             .group {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
+                @include screen-sm {
+                    width: 100%;
+                }
 
                 .txt {
                     margin-bottom: 70px;
                     @include screen-sm {
-                        position: absolute;
-                        top: 12%;
-                        left: 5%;
-
+                        margin-bottom: 85vw;
+                        width: 100%;
                     }
 
                     h1 {
@@ -64,7 +68,7 @@
                         color: #2b2b2b;
                         line-height: 1.4;
                         @include screen-sm {
-                            font-size: 22px;
+                            font-size: 20px;
                         }
                     }
 
@@ -75,38 +79,29 @@
                         line-height: 1.4;
                         margin-top: 12px;
                         @include screen-sm {
-                            font-size: 12px;
                             color: #fff;
+                            font-size: 13px;
                         }
                     }
                 }
 
                 .log-in {
+                    width: 320px;
                     @include screen-sm {
                         width: 100%;
-                        position: relative;
                     }
-
-
                     label {
                         display: flex;
                         flex-direction: column;
 
                         input {
-
                             background-color: #fff;
                             border: none;
                             border-bottom: 1px solid #d8d8d8;
                             font-size: 16px;
                             color: #8e9296;
                             height: 48px;
-                            width: 320px;
                             margin-top: 4px;
-
-                            @include screen-sm {
-                                width: 100%;
-                                background-color: transparent;
-                            }
 
                             &::placeholder {
                                 color: #8e9296;
@@ -143,82 +138,40 @@
                             }
 
                         }
-                        .btn {
-                            @include screen-sm {
-                                width: 100%;
-                            }
+                    }
+                }
+
+                .btn {
+
+                    width: 320px;
+                    @include screen-sm {
+                        width: 100%;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 48px;
+                        background-color: #36e790;
+                        border-radius: 8px;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 14px;
+                        font-width: 500;
+                        border: none;
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &:hover {
+                            background-color: #2bcd7d;
+                            transition: 0.2s;
                         }
                     }
                 }
             }
         }
 
-        .txt {
-            margin-bottom: 70px;
-
-            h1 {
-                font-size: 42px;
-                font-weight: 400;
-                color: #2b2b2b;
-                line-height: 1.4;
-            }
-
-            p {
-                font-size: 18px;
-                font-weight: 400;
-                color: #8e9296;
-                line-height: 1.4;
-                margin-top: 12px;
-            }
-
-        }
-
-        .log-in {
-            label {
-                display: flex;
-                flex-direction: column;
-
-                input {
-                    background-color: #fff;
-                    border: none;
-                    border-bottom: 1px solid #d8d8d8;
-                    font-size: 14px;
-                    color: #8e9296;
-
-                    &:focus {
-                        outline: 0;
-                    }
-
-                    height: 48px;
-                    width: 320px;
-                    margin-top: 4px;
-                }
-            }
-        }
-
-        .btn {
-
-            input {
-                width: 320px;
-                height: 48px;
-                background-color: #36e790;
-                border-radius: 8px;
-                text-align: center;
-                color: #fff;
-                font-size: 14px;
-                font-width: 500;
-                border: none;
-
-                &:focus {
-                    outline: none;
-                }
-
-                &:hover {
-                    background-color: #2bcd7d;
-                    transition: 0.2s;
-                }
-            }
-        }
     }
 }
 
@@ -265,14 +218,17 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 40px;
+                @include screen-sm {
+                    width: 100%;
+                }
 
                 li {
                     width: 285px;
                     height: 280px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
+                    @include screen-sm {
+                        width: 100%;
+                        text-align: center;
+                    }
 
                     .title {
                         font-size: 20px;
@@ -312,6 +268,13 @@
                         height: 80px;
                     }
                 }
+            }
+        }
+
+
+        .mobile {
+            @include screen-sm {
+                display: none;
             }
         }
 
@@ -364,7 +327,6 @@
                     padding: 60px 30px;
 
                     a {
-
                         h5 {
                             font-size: 20px;
                             color: $black;
@@ -375,7 +337,6 @@
                             font-size: 16px;
                             color: $gray;
                         }
-
                     }
                 }
             }
@@ -385,14 +346,12 @@
 
 .city {
     position: relative;
-
     .dot {
         position: absolute;
         top: 220px;
         right: 400px;
         z-index: -2;
     }
-
     .container {
         height: 627px;
         display: flex;
@@ -434,7 +393,6 @@
             .btn-group {
                 margin-top: 75px;
                 display: flex;
-
                 .btn {
                     width: 48px;
                     height: 48px;
@@ -443,65 +401,32 @@
                     justify-content: center;
                     align-items: center;
                     margin-right: 10px;
-
                     img {
                         width: 13px;
                     }
-
                     .normal {
 
                     }
-
                     .hover {
                         display: none;
                     }
 
                     &:hover {
+                        background: $main-color;
+                        border: none;
                         .normal {
                             display: none;
                         }
-
                         .hover {
                             display: flex;
                         }
 
-                        background: $main-color;
                     }
                 }
 
-                .btn-back {
-                    width: 48px;
-                    height: 48px;
-                    border: 1px solid #8e9296;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
 
-                    img {
-                        width: 13px;
-                        height: 23px;
-                    }
 
-                    .normal {
 
-                    }
-
-                    .hover {
-                        display: none;
-                    }
-
-                    &:hover {
-                        .normal {
-                            display: none;
-                        }
-
-                        .hover {
-                            display: flex;
-                        }
-
-                        background: $main-color;
-                    }
-                }
             }
         }
 

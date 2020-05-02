@@ -4,10 +4,13 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  @include screen-sm {
+
+  }
 
   .top-header {
     @include screen-sm {
-        display: none;
+      display: none;
     }
     .container {
       height: 55px;
@@ -49,20 +52,28 @@
         width: 100px;
       }
     }
-
-
-    .nav {
+    nav {
       @include screen-sm {
-          display: none;
+        display: none;
       }
       ul {
         display: flex;
         li {
+
+          &:nth-child(1) {
+            a {
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+
+
           &:nth-child(2) {
             a {
-              color: #ff5252;
-              font-weight: bold;
-              font-size: 16px;
+            &:hover {
+              color: #fff;
+            }
             }
           }
           &:last-child {
@@ -83,11 +94,13 @@
         }
       }
     }
+
     .btn-menu {
       display: none;
       @include screen-sm {
-        display: flex;
+        display: inline-block;
       }
     }
+
   }
 }

@@ -97,29 +97,29 @@ body {
       #header .main-header .logo a {
         width: 100px; } }
   @media only screen and (max-width: 768px) {
-    #header .main-header .nav {
+    #header .main-header nav {
       display: none; } }
-  #header .main-header .nav ul {
+  #header .main-header nav ul {
     display: flex; }
-    #header .main-header .nav ul li:nth-child(2) a {
-      color: #ff5252;
-      font-weight: bold;
-      font-size: 16px; }
-    #header .main-header .nav ul li:last-child a {
+    #header .main-header nav ul li:nth-child(1) a:hover {
+      color: #fff; }
+    #header .main-header nav ul li:nth-child(2) a:hover {
+      color: #fff; }
+    #header .main-header nav ul li:last-child a {
       padding-right: 0; }
-    #header .main-header .nav ul li a {
+    #header .main-header nav ul li a {
       font-size: 16px;
       color: #2b2b2b;
       font-weight: 500;
       padding: 15px 25px; }
-      #header .main-header .nav ul li a:hover {
+      #header .main-header nav ul li a:hover {
         color: #36e790;
         transition: 0.2s; }
   #header .main-header .btn-menu {
     display: none; }
     @media only screen and (max-width: 768px) {
       #header .main-header .btn-menu {
-        display: flex; } }
+        display: inline-block; } }
 
 .footer .container {
   height: 240px;
@@ -133,15 +133,15 @@ body {
       margin-right: 40px;
       font-size: 17px;
       color: #2b2b2b; }
-  .footer .container .address {
+  .footer .container .adress {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 8px; }
-    .footer .container .address p {
+    .footer .container .adress p {
       font-size: 14px;
       color: #8e9296;
       margin-right: 20px; }
-      .footer .container .address p.bar:after {
+      .footer .container .adress p.bar:after {
         content: '';
         width: 1px;
         height: 8px;
@@ -161,7 +161,7 @@ body {
   width: 953px; }
   @media only screen and (max-width: 768px) {
     .visual .cover {
-      width: 160%;
+      width: 140%;
       right: 5%; } }
   .visual .cover .dot {
     position: absolute;
@@ -170,12 +170,11 @@ body {
   .visual .cover .bike {
     position: absolute;
     right: -3%;
-    bottom: -5%; }
-    @media only screen and (max-width: 768px) {
-      .visual .cover .bike {
-        width: 84%; } }
+    bottom: -5%;
+    max-width: 89%; }
 .visual .container {
-  height: 900px; }
+  height: 900px;
+  position: relative; }
   .visual .container .login-section {
     margin-top: 70px;
     height: 100%;
@@ -183,18 +182,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end; }
+    @media only screen and (max-width: 768px) {
+      .visual .container .login-section {
+        justify-content: flex-start;
+        align-items: flex-start; } }
     .visual .container .login-section .group {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start; }
+      @media only screen and (max-width: 768px) {
+        .visual .container .login-section .group {
+          width: 100%; } }
       .visual .container .login-section .group .txt {
         margin-bottom: 70px; }
         @media only screen and (max-width: 768px) {
           .visual .container .login-section .group .txt {
-            position: absolute;
-            top: 12%;
-            left: 5%; } }
+            margin-bottom: 85vw;
+            width: 100%; } }
         .visual .container .login-section .group .txt h1 {
           font-size: 42px;
           font-weight: 400;
@@ -202,7 +207,7 @@ body {
           line-height: 1.4; }
           @media only screen and (max-width: 768px) {
             .visual .container .login-section .group .txt h1 {
-              font-size: 22px; } }
+              font-size: 20px; } }
         .visual .container .login-section .group .txt p {
           font-size: 18px;
           font-weight: 400;
@@ -211,91 +216,62 @@ body {
           margin-top: 12px; }
           @media only screen and (max-width: 768px) {
             .visual .container .login-section .group .txt p {
-              font-size: 12px;
-              color: #fff; } }
-      @media only screen and (max-width: 768px) {
-        .visual .container .login-section .group .log-in {
-          width: 100%;
-          position: relative; } }
-      .visual .container .login-section .group .log-in label {
-        display: flex;
-        flex-direction: column; }
-        .visual .container .login-section .group .log-in label input {
-          background-color: #fff;
-          border: none;
-          border-bottom: 1px solid #d8d8d8;
-          font-size: 16px;
-          color: #8e9296;
-          height: 48px;
-          width: 320px;
-          margin-top: 4px; }
-          @media only screen and (max-width: 768px) {
-            .visual .container .login-section .group .log-in label input {
-              width: 100%;
-              background-color: transparent; } }
-          .visual .container .login-section .group .log-in label input::placeholder {
-            color: #8e9296; }
-          .visual .container .login-section .group .log-in label input:focus {
-            outline: 0; }
-          .visual .container .login-section .group .log-in label input::placeholder {
-            font-size: 14px; }
-      .visual .container .login-section .group .log-in .checkbox {
-        margin-top: 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px; }
-        .visual .container .login-section .group .log-in .checkbox .auto-login span {
-          font-size: 14px;
-          color: #2b2b2b; }
-        .visual .container .login-section .group .log-in .checkbox .find a {
-          font-size: 14px;
-          color: #2b2b2b; }
+              color: #fff;
+              font-size: 13px; } }
+      .visual .container .login-section .group .log-in {
+        width: 320px; }
         @media only screen and (max-width: 768px) {
-          .visual .container .login-section .group .log-in .checkbox .btn {
+          .visual .container .login-section .group .log-in {
             width: 100%; } }
-  .visual .container .txt {
-    margin-bottom: 70px; }
-    .visual .container .txt h1 {
-      font-size: 42px;
-      font-weight: 400;
-      color: #2b2b2b;
-      line-height: 1.4; }
-    .visual .container .txt p {
-      font-size: 18px;
-      font-weight: 400;
-      color: #8e9296;
-      line-height: 1.4;
-      margin-top: 12px; }
-  .visual .container .log-in label {
-    display: flex;
-    flex-direction: column; }
-    .visual .container .log-in label input {
-      background-color: #fff;
-      border: none;
-      border-bottom: 1px solid #d8d8d8;
-      font-size: 14px;
-      color: #8e9296;
-      height: 48px;
-      width: 320px;
-      margin-top: 4px; }
-      .visual .container .log-in label input:focus {
-        outline: 0; }
-  .visual .container .btn input {
-    width: 320px;
-    height: 48px;
-    background-color: #36e790;
-    border-radius: 8px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    font-width: 500;
-    border: none; }
-    .visual .container .btn input:focus {
-      outline: none; }
-    .visual .container .btn input:hover {
-      background-color: #2bcd7d;
-      transition: 0.2s; }
+        .visual .container .login-section .group .log-in label {
+          display: flex;
+          flex-direction: column; }
+          .visual .container .login-section .group .log-in label input {
+            background-color: #fff;
+            border: none;
+            border-bottom: 1px solid #d8d8d8;
+            font-size: 16px;
+            color: #8e9296;
+            height: 48px;
+            margin-top: 4px; }
+            .visual .container .login-section .group .log-in label input::placeholder {
+              color: #8e9296; }
+            .visual .container .login-section .group .log-in label input:focus {
+              outline: 0; }
+            .visual .container .login-section .group .log-in label input::placeholder {
+              font-size: 14px; }
+        .visual .container .login-section .group .log-in .checkbox {
+          margin-top: 14px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px; }
+          .visual .container .login-section .group .log-in .checkbox .auto-login span {
+            font-size: 14px;
+            color: #2b2b2b; }
+          .visual .container .login-section .group .log-in .checkbox .find a {
+            font-size: 14px;
+            color: #2b2b2b; }
+      .visual .container .login-section .group .btn {
+        width: 320px; }
+        @media only screen and (max-width: 768px) {
+          .visual .container .login-section .group .btn {
+            width: 100%; } }
+        .visual .container .login-section .group .btn input {
+          width: 100%;
+          height: 48px;
+          background-color: #36e790;
+          border-radius: 8px;
+          text-align: center;
+          color: #fff;
+          font-size: 14px;
+          font-width: 500;
+          border: none; }
+          .visual .container .login-section .group .btn input:focus {
+            outline: none; }
+          .visual .container .login-section .group .btn input:hover {
+            background-color: #2bcd7d;
+            transition: 0.2s; }
 
 .usage {
   position: relative; }
@@ -327,13 +303,16 @@ body {
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px; }
+        @media only screen and (max-width: 768px) {
+          .usage .container .bike-usage ul {
+            width: 100%; } }
         .usage .container .bike-usage ul li {
           width: 285px;
-          height: 280px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center; }
+          height: 280px; }
+          @media only screen and (max-width: 768px) {
+            .usage .container .bike-usage ul li {
+              width: 100%;
+              text-align: center; } }
           .usage .container .bike-usage ul li .title {
             font-size: 20px;
             font-weight: 500;
@@ -360,6 +339,9 @@ body {
           .usage .container .bike-usage ul li img {
             width: 80px;
             height: 80px; }
+    @media only screen and (max-width: 768px) {
+      .usage .container .mobile {
+        display: none; } }
 
 .desc {
   background-color: #36e790;
@@ -443,28 +425,11 @@ body {
         .city .container .txt-area .btn-group .btn .hover {
           display: none; }
         .city .container .txt-area .btn-group .btn:hover {
-          background: #36e790; }
+          background: #36e790;
+          border: none; }
           .city .container .txt-area .btn-group .btn:hover .normal {
             display: none; }
           .city .container .txt-area .btn-group .btn:hover .hover {
-            display: flex; }
-      .city .container .txt-area .btn-group .btn-back {
-        width: 48px;
-        height: 48px;
-        border: 1px solid #8e9296;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .city .container .txt-area .btn-group .btn-back img {
-          width: 13px;
-          height: 23px; }
-        .city .container .txt-area .btn-group .btn-back .hover {
-          display: none; }
-        .city .container .txt-area .btn-group .btn-back:hover {
-          background: #36e790; }
-          .city .container .txt-area .btn-group .btn-back:hover .normal {
-            display: none; }
-          .city .container .txt-area .btn-group .btn-back:hover .hover {
             display: flex; }
 
 /*# sourceMappingURL=style.css.map */
