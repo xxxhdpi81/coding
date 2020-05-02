@@ -1,60 +1,24 @@
 .visual {
     .cover {
+        position: absolute;
+        right: 50%;
+        top: 0;
+        width: 953px;
 
         .circle {
-            position: absolute;
-            /*postion: relative; 하면 헤더 밑으로 가지를 않음
-             */
 
-            top: 0;
-            left: 0;
-            z-index: -10;
-            max-width: 50%;
-            @include screen-lg {
-                width: 85%;
-                height: 85%;
-            }
         }
 
         .dot {
             position: absolute;
-            top: 12.1%;
-            left: 0;
-            max-width: 30%;
-            @include screen-lg {
-                height: 50%;
-                width: 50%;
-            }
-            @include screen-md {
-                display: none;
-            }
+            top: 10%;
+            right: 542px;
         }
 
         .bike {
             position: absolute;
-            left: 9%;
-            /*
-            bottom: 0;
-            */
-            /*
-            top: 100%;
-             */
-            top: 350px;
-            max-width: 50%;
-            @include screen-lg {
-                width: 70%;
-                height: 70%;
-                position: absolute;
-                left: 2%;
-                @include screen-md {
-
-                }
-
-                @include screen-sm {
-                    display: none;
-                }
-            }
-
+            right: -3%;
+            bottom: -5%;
         }
 
     }
@@ -231,20 +195,23 @@
 
         .gray-dot-big {
             position: absolute;
-            left: 690px;
+            //left: 690px;
+            left: 50%;
+            margin-left: -250px;
             top: 0;
-            z-index: -1;
         }
 
         .gray-dot-small {
             position: absolute;
-            left: 0;
+            //left: 0;
+            left: 50%;
+            margin-left: -980px;
             top: 200px;
-            z-index: -1;
         }
 
         .bike-usage {
             height: 980px;
+            position: relative;
 
 
             h1 {
@@ -291,7 +258,6 @@
                         a {
                             color: #8e9296;
                             display: flex;
-                            align-items: none;
 
                             img {
                                 width: 20px;
@@ -358,12 +324,6 @@
                     border-radius: 8px;
                     padding: 60px 30px;
 
-                    &:hover {
-                        position: relative;
-                        top: -15px;
-                        transition: 0.2s;
-                    }
-
                     a {
                         h5 {
                             font-size: 20px;
@@ -428,9 +388,37 @@
                 }
             }
 
-            .btn {
+            .btn-group {
                 margin-top: 75px;
                 display: flex;
+                .btn {
+                    width: 48px;
+                    height: 48px;
+                    border: 1px solid #8e9296;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                    img {
+                        width: 13px;
+                    }
+                    .normal {
+
+                    }
+                    .hover {
+                        display: none;
+                    }
+
+                    &:hover {
+                        .normal {
+                            display: none;
+                        }
+                        .hover {
+                            display: flex;
+                        }
+                        background: $main-color;
+                    }
+                }
                 .btn-back {
                     width: 48px;
                     height: 48px;
@@ -438,34 +426,24 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    &:hover {
-                        background: $main-color;
-                        border: none;
-                    }
-
-                    a {
-                        display: flex;
-                        justify-content: row;
-                        align-items: center;
-
-
-                        img {
-                            width: 13px;
-                            height: 23px;
-                        }
-                    }
-                }
-                .btn-next {
-                    width: 48px;
-                    height: 48px;
-                    background-color: $main-color;
-                    margin-left: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     img {
                         width: 13px;
                         height: 23px;
+                    }
+                    .normal {
+
+                    }
+                    .hover {
+                        display: none;
+                    }
+                    &:hover {
+                        .normal {
+                            display: none;
+                        }
+                        .hover {
+                            display: flex;
+                        }
+                        background: $main-color;
                     }
                 }
             }
