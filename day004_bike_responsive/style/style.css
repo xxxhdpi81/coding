@@ -468,7 +468,10 @@ body {
     .city .container .txt-area .circle-group {
       display: flex;
       flex-direction: row;
-      justify-content: center; }
+      justify-content: flex-start; }
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area .circle-group {
+          justify-content: center; } }
       .city .container .txt-area .circle-group .circle {
         display: flex;
         margin-right: 10px; }
