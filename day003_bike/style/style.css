@@ -133,14 +133,26 @@ body {
       margin-right: 40px;
       font-size: 17px;
       color: #2b2b2b; }
+      @media only screen and (max-width: 768px) {
+        .footer .container .terms h6 a {
+          font-size: 14px;
+          margin-right: 16px; } }
   .footer .container .address {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 8px; }
+    @media only screen and (max-width: 768px) {
+      .footer .container .address {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; } }
     .footer .container .address p {
       font-size: 14px;
       color: #8e9296;
       margin-right: 20px; }
+      @media only screen and (max-width: 768px) {
+        .footer .container .address p {
+          font-size: 12px; } }
       .footer .container .address p.bar:after {
         content: '';
         width: 1px;
@@ -153,6 +165,9 @@ body {
   .footer .container .copywright p {
     color: #8e9296;
     font-size: 14px; }
+    @media only screen and (max-width: 768px) {
+      .footer .container .copywright p {
+        font-size: 12px; } }
 
 .visual .cover {
   position: absolute;
@@ -183,18 +198,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end; }
+    @media only screen and (max-width: 768px) {
+      .visual .container .login-section {
+        justify-content: flex-start;
+        align-items: flex-start; } }
     .visual .container .login-section .group {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start; }
+      @media only screen and (max-width: 768px) {
+        .visual .container .login-section .group {
+          width: 100%; } }
       .visual .container .login-section .group .txt {
         margin-bottom: 70px; }
         @media only screen and (max-width: 768px) {
           .visual .container .login-section .group .txt {
-            position: absolute;
-            top: 12%;
-            left: 5%; } }
+            position: relative;
+            margin-bottom: 85vw;
+            width: 100%; } }
         .visual .container .login-section .group .txt h1 {
           font-size: 42px;
           font-weight: 400;
@@ -216,10 +238,13 @@ body {
       @media only screen and (max-width: 768px) {
         .visual .container .login-section .group .log-in {
           width: 100%;
-          position: relative; } }
+          margin-top: 50px; } }
       .visual .container .login-section .group .log-in label {
         display: flex;
         flex-direction: column; }
+        @media only screen and (max-width: 768px) {
+          .visual .container .login-section .group .log-in label {
+            width: 100%; } }
         .visual .container .login-section .group .log-in label input {
           background-color: #fff;
           border: none;
@@ -282,7 +307,7 @@ body {
       .visual .container .log-in label input:focus {
         outline: 0; }
   .visual .container .btn input {
-    width: 320px;
+    width: 100%;
     height: 48px;
     background-color: #36e790;
     border-radius: 8px;
@@ -322,18 +347,29 @@ body {
         color: #2b2b2b;
         line-height: 1.4;
         font-weight: 400; }
+        @media only screen and (max-width: 768px) {
+          .usage .container .bike-usage h1 {
+            font-size: 24px; } }
       .usage .container .bike-usage ul {
         width: 590px;
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px; }
+        @media only screen and (max-width: 768px) {
+          .usage .container .bike-usage ul {
+            width: 100%;
+            text-align: center;
+            position: relative; } }
         .usage .container .bike-usage ul li {
           width: 285px;
-          height: 280px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center; }
+          height: 280px; }
+          @media only screen and (max-width: 768px) {
+            .usage .container .bike-usage ul li {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; } }
           .usage .container .bike-usage ul li .title {
             font-size: 20px;
             font-weight: 500;
@@ -360,6 +396,9 @@ body {
           .usage .container .bike-usage ul li img {
             width: 80px;
             height: 80px; }
+    @media only screen and (max-width: 768px) {
+      .usage .container .mobile {
+        display: none; } }
 
 .desc {
   background-color: #36e790;
@@ -374,21 +413,38 @@ body {
     right: 228px; }
   .desc .container {
     height: 760px;
-    padding-top: 140px; }
+    padding-top: 130px; }
+    @media only screen and (max-width: 768px) {
+      .desc .container {
+        padding-top: 50px;
+        height: 1450px; } }
     .desc .container .title {
       margin-bottom: 70px; }
       .desc .container .title h1 {
         color: #fff;
         font-size: 42px; }
+        @media only screen and (max-width: 768px) {
+          .desc .container .title h1 {
+            font-size: 24px;
+            position: relative; } }
     .desc .container .card-section ul {
       display: flex;
       justify-content: space-around; }
+      @media only screen and (max-width: 768px) {
+        .desc .container .card-section ul {
+          flex-direction: column;
+          justify-content: center; } }
       .desc .container .card-section ul li.card {
         background-color: #fff;
         width: 285px;
         height: 285px;
         border-radius: 8px;
         padding: 60px 30px; }
+        @media only screen and (max-width: 768px) {
+          .desc .container .card-section ul li.card {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 14px; } }
         .desc .container .card-section ul li.card a h5 {
           font-size: 20px;
           color: #2b2b2b;
@@ -398,7 +454,8 @@ body {
           color: #8e9296; }
 
 .city {
-  position: relative; }
+  position: relative;
+  margin-top: 40px; }
   .city .dot {
     position: absolute;
     top: 220px;
@@ -409,27 +466,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .city .container {
+        flex-direction: column;
+        justify-content: center; } }
     .city .container .txt-area h1 {
       color: #2b2b2b;
       font-size: 42px;
       margin-bottom: 18px; }
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area h1 {
+          font-size: 24px;
+          margin-top: 10px; } }
     .city .container .txt-area p {
       color: #8e9296;
       font-size: 20px; }
-    .city .container .txt-area .circle {
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area p {
+          font-size: 14px; } }
+    .city .container .txt-area .align {
       display: flex;
-      margin-right: 10px; }
-      .city .container .txt-area .circle .circle {
-        background-color: #d8d8d8;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-top: 27px; }
-        .city .container .txt-area .circle .circle:first-child {
-          background-color: #36e790; }
+      justify-content: center; }
+      .city .container .txt-area .align .circle {
+        display: flex; }
+        .city .container .txt-area .align .circle .circle {
+          background-color: #d8d8d8;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-top: 27px;
+          margin-right: 10px; }
+          .city .container .txt-area .align .circle .circle:first-child {
+            background-color: #36e790; }
     .city .container .txt-area .btn-group {
       margin-top: 75px;
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .city .container .txt-area .btn-group .btn {
         width: 48px;
         height: 48px;
@@ -438,6 +510,10 @@ body {
         justify-content: center;
         align-items: center;
         margin-right: 10px; }
+        @media only screen and (max-width: 768px) {
+          .city .container .txt-area .btn-group .btn {
+            position: relative;
+            bottom: 40px; } }
         .city .container .txt-area .btn-group .btn img {
           width: 13px; }
         .city .container .txt-area .btn-group .btn .hover {

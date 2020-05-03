@@ -14,6 +14,10 @@
                     margin-right: 40px;
                     font-size: 17px;
                     color: $black;
+                    @include screen-sm {
+                        font-size: 14px;
+                        margin-right: 16px;
+                    }
                 }
             }
         }
@@ -22,11 +26,19 @@
             display: flex;
             justify-content: flex-start;
             margin-bottom: 8px;
+            @include screen-sm {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
 
             p {
                 font-size: 14px;
                 color: $gray;
                 margin-right: 20px;
+                @include screen-sm {
+                    font-size: 12px;
+                }
 
                 &.bar:after {
                     content: '';
@@ -46,6 +58,9 @@
             p {
                 color: $gray;
                 font-size: 14px;
+                @include screen-sm {
+                    font-size: 12px;
+                }
             }
         }
     }

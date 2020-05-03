@@ -41,6 +41,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
+            @include screen-sm {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
 
 
             .group {
@@ -48,13 +52,19 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
+                @include screen-sm {
+
+                    width: 100%;
+                }
+
 
                 .txt {
                     margin-bottom: 70px;
                     @include screen-sm {
-                        position: absolute;
-                        top: 12%;
-                        left: 5%;
+                        position: relative;
+                        margin-bottom: 85vw;
+                        width: 100%;
+
 
                     }
 
@@ -82,15 +92,21 @@
                 }
 
                 .log-in {
+
                     @include screen-sm {
                         width: 100%;
-                        position: relative;
+                        margin-top: 50px;
+
+
                     }
 
 
                     label {
                         display: flex;
                         flex-direction: column;
+                        @include screen-sm {
+                            width: 100%;
+                        }
 
                         input {
 
@@ -143,6 +159,7 @@
                             }
 
                         }
+
                         .btn {
                             @include screen-sm {
                                 width: 100%;
@@ -184,14 +201,15 @@
                     border-bottom: 1px solid #d8d8d8;
                     font-size: 14px;
                     color: #8e9296;
+                    height: 48px;
+                    width: 320px;
+                    margin-top: 4px;
 
                     &:focus {
                         outline: 0;
                     }
 
-                    height: 48px;
-                    width: 320px;
-                    margin-top: 4px;
+
                 }
             }
         }
@@ -199,7 +217,7 @@
         .btn {
 
             input {
-                width: 320px;
+                width: 100%;
                 height: 48px;
                 background-color: #36e790;
                 border-radius: 8px;
@@ -224,6 +242,10 @@
 
 .usage {
     position: relative;
+    @include screen-sm {
+
+    }
+
 
     .container {
         display: flex;
@@ -258,6 +280,9 @@
                 color: #2b2b2b;
                 line-height: 1.4;
                 font-weight: 400;
+                @include screen-sm {
+                    font-size: 24px;
+                }
             }
 
             ul {
@@ -265,14 +290,27 @@
                 display: flex;
                 flex-wrap: wrap;
                 margin-top: 40px;
+                @include screen-sm {
+                    width: 100%;
+                    text-align: center;
+                    position: relative;
+
+                }
 
                 li {
                     width: 285px;
                     height: 280px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-content: center;
+                    @include screen-sm {
+                        width: 100%;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+
+                    }
+
 
                     .title {
                         font-size: 20px;
@@ -315,6 +353,12 @@
             }
         }
 
+        .mobile {
+            @include screen-sm {
+                display: none;
+            }
+        }
+
 
     }
 
@@ -324,6 +368,10 @@
 .desc {
     background-color: $main-color;
     position: relative;
+
+    @include screen-sm {
+
+    }
 
     .dot1 {
         position: absolute;
@@ -339,7 +387,11 @@
 
     .container {
         height: 760px;
-        padding-top: 140px;
+        padding-top: 130px;
+        @include screen-sm {
+            padding-top: 50px;
+            height: 1450px;
+        }
 
         .title {
             margin-bottom: 70px;
@@ -347,6 +399,11 @@
             h1 {
                 color: #fff;
                 font-size: 42px;
+                @include screen-sm {
+                    font-size: 24px;
+                    position: relative;
+
+                }
 
             }
         }
@@ -355,6 +412,12 @@
             ul {
                 display: flex;
                 justify-content: space-around;
+                @include screen-sm {
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                }
 
                 li.card {
                     background-color: #fff;
@@ -362,6 +425,11 @@
                     height: 285px;
                     border-radius: 8px;
                     padding: 60px 30px;
+                    @include screen-sm {
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 14px;
+                    }
 
                     a {
 
@@ -385,6 +453,8 @@
 
 .city {
     position: relative;
+    margin-top: 40px;
+
 
     .dot {
         position: absolute;
@@ -398,7 +468,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include screen-sm {
+            flex-direction: column;
+            justify-content: center;
 
+        }
+
+
+        .pic {
+            @include screen-sm {
+
+            }
+
+        }
 
         .txt-area {
 
@@ -407,26 +489,36 @@
                 color: $black;
                 font-size: 42px;
                 margin-bottom: 18px;
+                @include screen-sm {
+                    font-size: 24px;
+                    margin-top: 10px;
+                }
             }
 
             p {
                 color: $gray;
                 font-size: 20px;
+                @include screen-sm {
+                    font-size: 14px;
+                }
             }
-
-            .circle {
+            .align {
                 display: flex;
-                margin-right: 10px;
+                justify-content: center;
 
                 .circle {
-                    background-color: #d8d8d8;
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 50%;
-                    margin-top: 27px;
+                    display: flex;
+                    .circle {
+                        background-color: #d8d8d8;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin-top: 27px;
+                        margin-right: 10px;
 
-                    &:first-child {
-                        background-color: #36e790;
+                        &:first-child {
+                            background-color: #36e790;
+                        }
                     }
                 }
             }
@@ -434,6 +526,7 @@
             .btn-group {
                 margin-top: 75px;
                 display: flex;
+                justify-content: center;
 
                 .btn {
                     width: 48px;
@@ -443,6 +536,10 @@
                     justify-content: center;
                     align-items: center;
                     margin-right: 10px;
+                    @include screen-sm {
+                        position: relative;
+                        bottom: 40px;
+                    }
 
                     img {
                         width: 13px;
@@ -467,6 +564,7 @@
 
                         background: $main-color;
                     }
+
                 }
 
                 .btn-back {
