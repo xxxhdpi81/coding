@@ -486,7 +486,7 @@ body {
           font-size: 14px; } }
     .city .container .txt-area .align {
       display: flex;
-      justify-content: center; }
+      justify-content: flex-start; }
       .city .container .txt-area .align .circle {
         display: flex; }
         .city .container .txt-area .align .circle .circle {
@@ -501,7 +501,7 @@ body {
     .city .container .txt-area .btn-group {
       margin-top: 75px;
       display: flex;
-      justify-content: center; }
+      justify-content: flex-start; }
       .city .container .txt-area .btn-group .btn {
         width: 48px;
         height: 48px;
@@ -519,28 +519,11 @@ body {
         .city .container .txt-area .btn-group .btn .hover {
           display: none; }
         .city .container .txt-area .btn-group .btn:hover {
-          background: #36e790; }
+          background: #36e790;
+          border: none; }
           .city .container .txt-area .btn-group .btn:hover .normal {
             display: none; }
           .city .container .txt-area .btn-group .btn:hover .hover {
-            display: flex; }
-      .city .container .txt-area .btn-group .btn-back {
-        width: 48px;
-        height: 48px;
-        border: 1px solid #8e9296;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .city .container .txt-area .btn-group .btn-back img {
-          width: 13px;
-          height: 23px; }
-        .city .container .txt-area .btn-group .btn-back .hover {
-          display: none; }
-        .city .container .txt-area .btn-group .btn-back:hover {
-          background: #36e790; }
-          .city .container .txt-area .btn-group .btn-back:hover .normal {
-            display: none; }
-          .city .container .txt-area .btn-group .btn-back:hover .hover {
             display: flex; }
 
 /*# sourceMappingURL=style.css.map */

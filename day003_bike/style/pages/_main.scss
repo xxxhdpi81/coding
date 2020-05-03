@@ -504,10 +504,12 @@
             }
             .align {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
 
                 .circle {
                     display: flex;
+
+
                     .circle {
                         background-color: #d8d8d8;
                         width: 12px;
@@ -526,7 +528,7 @@
             .btn-group {
                 margin-top: 75px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
 
                 .btn {
                     width: 48px;
@@ -554,6 +556,8 @@
                     }
 
                     &:hover {
+                        background: $main-color;
+                        border: none;
                         .normal {
                             display: none;
                         }
@@ -562,44 +566,12 @@
                             display: flex;
                         }
 
-                        background: $main-color;
+
                     }
 
                 }
 
-                .btn-back {
-                    width: 48px;
-                    height: 48px;
-                    border: 1px solid #8e9296;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
 
-                    img {
-                        width: 13px;
-                        height: 23px;
-                    }
-
-                    .normal {
-
-                    }
-
-                    .hover {
-                        display: none;
-                    }
-
-                    &:hover {
-                        .normal {
-                            display: none;
-                        }
-
-                        .hover {
-                            display: flex;
-                        }
-
-                        background: $main-color;
-                    }
-                }
             }
         }
 
