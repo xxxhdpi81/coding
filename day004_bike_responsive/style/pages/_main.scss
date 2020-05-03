@@ -33,6 +33,9 @@
     .container {
         height: 900px;
         position: relative;
+        @include screen-sm {
+            height: 740px;
+        }
 
         .login-section {
             margin-top: 70px;
@@ -158,6 +161,7 @@
                         font-size: 14px;
                         font-width: 500;
                         border: none;
+                        transition: 0.2s;
 
                         &:focus {
                             outline: none;
@@ -165,7 +169,7 @@
 
                         &:hover {
                             background-color: #2bcd7d;
-                            transition: 0.2s;
+
                         }
                     }
                 }
@@ -204,6 +208,9 @@
         .bike-usage {
             height: 980px;
             position: relative;
+            @include screen-sm {
+                height: 1300px;
+            }
 
 
             h1 {
@@ -211,6 +218,9 @@
                 color: #2b2b2b;
                 line-height: 1.4;
                 font-weight: 400;
+                @include screen-sm {
+                    font-size: 22px;
+                }
             }
 
             ul {
@@ -228,6 +238,11 @@
                     @include screen-sm {
                         width: 100%;
                         text-align: center;
+                        margin-top: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                     .title {
@@ -242,6 +257,8 @@
                         font-size: 14px;
                         font-weight: 400;
                     }
+
+
 
                     .more {
                         color: #8e9296;
@@ -303,13 +320,24 @@
     .container {
         height: 760px;
         padding-top: 140px;
+        @include screen-sm {
+            height: 1370px;
+            padding-top: 50px;
+        }
 
         .title {
             margin-bottom: 70px;
+            @include screen-sm {
+                margin-bottom: 30px;
+            }
 
             h1 {
                 color: #fff;
                 font-size: 42px;
+                @include screen-sm {
+                    font-size: 22px;
+                }
+
 
             }
         }
@@ -318,6 +346,12 @@
             ul {
                 display: flex;
                 justify-content: space-around;
+                @include screen-sm {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
 
                 li.card {
                     background-color: #fff;
@@ -325,12 +359,24 @@
                     height: 285px;
                     border-radius: 8px;
                     padding: 60px 30px;
+                    @include screen-sm {
+                        width: 100%;
+                        margin-top: 14px;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        transform: translate(0,-10px);
+
+
+                    }
 
                     a {
                         h5 {
                             font-size: 20px;
                             color: $black;
                             margin-bottom: 20px;
+
                         }
 
                         p {
@@ -366,11 +412,17 @@
                 color: $black;
                 font-size: 42px;
                 margin-bottom: 18px;
+                @include screen-sm {
+                    font-size: 22px;
+                }
             }
 
             p {
                 color: $gray;
                 font-size: 20px;
+                @include screen-sm {
+                    font-size: 14px;
+                }
             }
 
             .circle {

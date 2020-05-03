@@ -114,19 +114,26 @@ a {
       position: relative;
       top: 2px; }
 
-.btn .box {
-  width: 320px;
-  height: 48px;
-  background-color: #ddd;
-  margin: 0 auto;
+.group {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-.btn .circle {
-  margin: 0 auto;
-  border-radius: 50%;
-  background-color: #ddd;
-  width: 100px;
-  height: 100px; }
+  justify-content: center; }
+  .group .btn.back {
+    background-color: #fff;
+    border: 1px solid #8e9296;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .group .btn.back .hover {
+      display: none; }
+    .group .btn.back:hover {
+      background-color: #36e790;
+      border: none; }
+      .group .btn.back:hover .normal {
+        display: none; }
+      .group .btn.back:hover .hover {
+        display: flex; }
 
 /*# sourceMappingURL=style.css.map */

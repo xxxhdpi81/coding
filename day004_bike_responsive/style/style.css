@@ -103,8 +103,6 @@ body {
     display: flex; }
     #header .main-header nav ul li:nth-child(1) a:hover {
       color: #fff; }
-    #header .main-header nav ul li:nth-child(2) a:hover {
-      color: #fff; }
     #header .main-header nav ul li:last-child a {
       padding-right: 0; }
     #header .main-header nav ul li a {
@@ -175,6 +173,9 @@ body {
 .visual .container {
   height: 900px;
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .visual .container {
+      height: 740px; } }
   .visual .container .login-section {
     margin-top: 70px;
     height: 100%;
@@ -266,12 +267,12 @@ body {
           color: #fff;
           font-size: 14px;
           font-width: 500;
-          border: none; }
+          border: none;
+          transition: 0.2s; }
           .visual .container .login-section .group .btn input:focus {
             outline: none; }
           .visual .container .login-section .group .btn input:hover {
-            background-color: #2bcd7d;
-            transition: 0.2s; }
+            background-color: #2bcd7d; }
 
 .usage {
   position: relative; }
@@ -293,11 +294,17 @@ body {
     .usage .container .bike-usage {
       height: 980px;
       position: relative; }
+      @media only screen and (max-width: 768px) {
+        .usage .container .bike-usage {
+          height: 1300px; } }
       .usage .container .bike-usage h1 {
         font-size: 42px;
         color: #2b2b2b;
         line-height: 1.4;
         font-weight: 400; }
+        @media only screen and (max-width: 768px) {
+          .usage .container .bike-usage h1 {
+            font-size: 22px; } }
       .usage .container .bike-usage ul {
         width: 590px;
         display: flex;
@@ -312,7 +319,12 @@ body {
           @media only screen and (max-width: 768px) {
             .usage .container .bike-usage ul li {
               width: 100%;
-              text-align: center; } }
+              text-align: center;
+              margin-top: 14px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; } }
           .usage .container .bike-usage ul li .title {
             font-size: 20px;
             font-weight: 500;
@@ -357,20 +369,42 @@ body {
   .desc .container {
     height: 760px;
     padding-top: 140px; }
+    @media only screen and (max-width: 768px) {
+      .desc .container {
+        height: 1370px;
+        padding-top: 50px; } }
     .desc .container .title {
       margin-bottom: 70px; }
+      @media only screen and (max-width: 768px) {
+        .desc .container .title {
+          margin-bottom: 30px; } }
       .desc .container .title h1 {
         color: #fff;
         font-size: 42px; }
+        @media only screen and (max-width: 768px) {
+          .desc .container .title h1 {
+            font-size: 22px; } }
     .desc .container .card-section ul {
       display: flex;
       justify-content: space-around; }
+      @media only screen and (max-width: 768px) {
+        .desc .container .card-section ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
       .desc .container .card-section ul li.card {
         background-color: #fff;
         width: 285px;
         height: 285px;
         border-radius: 8px;
         padding: 60px 30px; }
+        @media only screen and (max-width: 768px) {
+          .desc .container .card-section ul li.card {
+            width: 100%;
+            margin-top: 14px;
+            text-align: center; } }
+        .desc .container .card-section ul li.card:hover {
+          transform: translate(0, -10px); }
         .desc .container .card-section ul li.card a h5 {
           font-size: 20px;
           color: #2b2b2b;
@@ -395,9 +429,15 @@ body {
       color: #2b2b2b;
       font-size: 42px;
       margin-bottom: 18px; }
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area h1 {
+          font-size: 22px; } }
     .city .container .txt-area p {
       color: #8e9296;
       font-size: 20px; }
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area p {
+          font-size: 14px; } }
     .city .container .txt-area .circle {
       display: flex;
       margin-right: 10px; }
