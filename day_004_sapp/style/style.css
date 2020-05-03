@@ -1,3 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  word-break: keep-all; }
 
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.4; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+#header .container {
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header .container .gnb ul {
+    display: flex; }
+    #header .container .gnb ul li a {
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 600; }
+
+.visual .bg-shape {
+  background: linear-gradient(-47deg, #8731E8, #4528DC);
+  width: 800px;
+  height: 800px;
+  transform: rotate(-38deg);
+  position: absolute;
+  top: -300px;
+  left: 55%;
+  z-index: -100; }
+.visual .container {
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .visual .container .welcome-intro h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #222222; }
+  .visual .container .welcome-intro P {
+    font-size: 14px;
+    color: #565656; }
+  .visual .container .welcome-intro .btn-start {
+    margin-top: 20px; }
+    .visual .container .welcome-intro .btn-start input {
+      background: linear-gradient(-47deg, #8731E8, #4528DC);
+      width: 146px;
+      height: 52px;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

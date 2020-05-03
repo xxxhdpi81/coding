@@ -1,0 +1,31 @@
+#header {
+    .container {
+        height: 84px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            a {
+                img {
+
+                }
+            }
+        }
+        .gnb {
+            ul {
+                display: flex;
+                li {
+
+                    a {
+                        padding: 30px 20px;
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+
+        }
+    }
+}

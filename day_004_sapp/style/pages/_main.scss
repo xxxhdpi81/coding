@@ -1,0 +1,45 @@
+.visual {
+    .bg-shape {
+        background: $main;
+        width: 800px;
+        height: 800px;
+        transform: rotate(-38deg);
+        position: absolute;
+        top: -300px;
+        left: 55%;
+        z-index: -100;
+
+
+
+    }
+    .container {
+        height: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .welcome-intro {
+            h1 {
+                font-size: 56px;
+                font-weight: 700;
+                color: $black;
+            }
+            P {
+                font-size: 14px;
+                color: $gray;
+            }
+            .btn-start {
+                margin-top: 20px;
+                input {
+                    background: $main;
+                    width: 146px;
+                    height: 52px;
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+}
