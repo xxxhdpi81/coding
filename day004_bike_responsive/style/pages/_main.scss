@@ -403,9 +403,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include screen-sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 0;
+            overflow: hidden;
+            height: 660px;
+        }
 
 
         .txt-area {
+            @include screen-sm {
+                text-align: center;
+            }
 
 
             h1 {
@@ -414,6 +425,7 @@
                 margin-bottom: 18px;
                 @include screen-sm {
                     font-size: 22px;
+                    margin-top: 20px;
                 }
             }
 
@@ -425,60 +437,74 @@
                 }
             }
 
-            .circle {
+            .circle-group {
                 display: flex;
-                margin-right: 10px;
-
+                flex-direction: row;
+                justify-content: center;
                 .circle {
-                    background-color: #d8d8d8;
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 50%;
-                    margin-top: 27px;
+                    display: flex;
+                    margin-right: 10px;
+                    @include screen-sm {
 
-                    &:first-child {
-                        background-color: #36e790;
+                    }
+
+                    .circle {
+                        background-color: #d8d8d8;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin-top: 27px;
+
+                        &:first-child {
+                            background-color: #36e790;
+                        }
                     }
                 }
             }
 
-            .btn-group {
-                margin-top: 75px;
-                display: flex;
-                .btn {
-                    width: 48px;
-                    height: 48px;
-                    border: 1px solid #8e9296;
+            .align-btn {
+                @include screen-sm {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    margin-right: 10px;
-                    img {
-                        width: 13px;
-                    }
-                    .normal {
-
-                    }
-                    .hover {
-                        display: none;
-                    }
-
-                    &:hover {
-                        background: $main-color;
-                        border: none;
-                        .normal {
-                            display: none;
-                        }
-                        .hover {
-                            display: flex;
-                        }
-
-                    }
                 }
 
+                .btn-group {
+                    margin-top: 75px;
+                    display: flex;
+                    @include screen-sm {
+                        margin-top: 20px;
+                    }
+                    .btn {
+                        width: 48px;
+                        height: 48px;
+                        border: 1px solid #8e9296;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 10px;
+                        img {
+                            width: 13px;
+                        }
+                        .normal {
 
+                        }
+                        .hover {
+                            display: none;
+                        }
 
+                        &:hover {
+                            background: $main-color;
+                            border: none;
+                            .normal {
+                                display: none;
+                            }
+                            .hover {
+                                display: flex;
+                            }
 
+                        }
+                    }
+                }
             }
         }
 

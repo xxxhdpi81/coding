@@ -131,15 +131,27 @@ body {
       margin-right: 40px;
       font-size: 17px;
       color: #2b2b2b; }
-  .footer .container .adress {
+      @media only screen and (max-width: 768px) {
+        .footer .container .terms h6 a {
+          font-size: 14px;
+          margin: 0 14px;
+          margin-left: 0; } }
+  .footer .container .address {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 8px; }
-    .footer .container .adress p {
+    @media only screen and (max-width: 768px) {
+      .footer .container .address {
+        display: flex;
+        flex-direction: column; } }
+    .footer .container .address p {
       font-size: 14px;
       color: #8e9296;
       margin-right: 20px; }
-      .footer .container .adress p.bar:after {
+      @media only screen and (max-width: 768px) {
+        .footer .container .address p {
+          font-size: 12px; } }
+      .footer .container .address p.bar:after {
         content: '';
         width: 1px;
         height: 8px;
@@ -151,6 +163,9 @@ body {
   .footer .container .copywright p {
     color: #8e9296;
     font-size: 14px; }
+    @media only screen and (max-width: 768px) {
+      .footer .container .copywright p {
+        font-size: 12px; } }
 
 .visual .cover {
   position: absolute;
@@ -425,34 +440,57 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .city .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        overflow: hidden;
+        height: 660px; } }
+    @media only screen and (max-width: 768px) {
+      .city .container .txt-area {
+        text-align: center; } }
     .city .container .txt-area h1 {
       color: #2b2b2b;
       font-size: 42px;
       margin-bottom: 18px; }
       @media only screen and (max-width: 768px) {
         .city .container .txt-area h1 {
-          font-size: 22px; } }
+          font-size: 22px;
+          margin-top: 20px; } }
     .city .container .txt-area p {
       color: #8e9296;
       font-size: 20px; }
       @media only screen and (max-width: 768px) {
         .city .container .txt-area p {
           font-size: 14px; } }
-    .city .container .txt-area .circle {
+    .city .container .txt-area .circle-group {
       display: flex;
-      margin-right: 10px; }
-      .city .container .txt-area .circle .circle {
-        background-color: #d8d8d8;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-top: 27px; }
-        .city .container .txt-area .circle .circle:first-child {
-          background-color: #36e790; }
-    .city .container .txt-area .btn-group {
+      flex-direction: row;
+      justify-content: center; }
+      .city .container .txt-area .circle-group .circle {
+        display: flex;
+        margin-right: 10px; }
+        .city .container .txt-area .circle-group .circle .circle {
+          background-color: #d8d8d8;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-top: 27px; }
+          .city .container .txt-area .circle-group .circle .circle:first-child {
+            background-color: #36e790; }
+    @media only screen and (max-width: 768px) {
+      .city .container .txt-area .align-btn {
+        display: flex;
+        justify-content: center; } }
+    .city .container .txt-area .align-btn .btn-group {
       margin-top: 75px;
       display: flex; }
-      .city .container .txt-area .btn-group .btn {
+      @media only screen and (max-width: 768px) {
+        .city .container .txt-area .align-btn .btn-group {
+          margin-top: 20px; } }
+      .city .container .txt-area .align-btn .btn-group .btn {
         width: 48px;
         height: 48px;
         border: 1px solid #8e9296;
@@ -460,16 +498,16 @@ body {
         justify-content: center;
         align-items: center;
         margin-right: 10px; }
-        .city .container .txt-area .btn-group .btn img {
+        .city .container .txt-area .align-btn .btn-group .btn img {
           width: 13px; }
-        .city .container .txt-area .btn-group .btn .hover {
+        .city .container .txt-area .align-btn .btn-group .btn .hover {
           display: none; }
-        .city .container .txt-area .btn-group .btn:hover {
+        .city .container .txt-area .align-btn .btn-group .btn:hover {
           background: #36e790;
           border: none; }
-          .city .container .txt-area .btn-group .btn:hover .normal {
+          .city .container .txt-area .align-btn .btn-group .btn:hover .normal {
             display: none; }
-          .city .container .txt-area .btn-group .btn:hover .hover {
+          .city .container .txt-area .align-btn .btn-group .btn:hover .hover {
             display: flex; }
 
 /*# sourceMappingURL=style.css.map */
