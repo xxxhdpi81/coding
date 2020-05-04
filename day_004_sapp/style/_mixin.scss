@@ -1,0 +1,27 @@
+@mixin h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: $black;
+}
+
+@mixin box {
+    background-color: #fff;
+    width: 54px;
+    height: 54px;
+    border-radius: 4px;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,.2);
+}
+
+@mixin btn {
+
+        background: $main;
+        width: 146px;
+        height: 52px;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+
+}
+

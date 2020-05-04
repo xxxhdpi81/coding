@@ -190,8 +190,134 @@ a {
           margin-left: 0; }
           .section-discover .container .discover-txt .icons .icn-bg span {
             font-size: 30px;
-            width: 21px;
-            height: 24px;
             color: #4528DC; }
+
+.section-service .container {
+  height: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section-service .container .service-txt h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #222222; }
+  .section-service .container .service-txt .text-group .p-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0; }
+    .section-service .container .service-txt .text-group .p-group .service-icn {
+      background-color: #ddd;
+      width: 54px;
+      height: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      width: 54px;
+      height: 54px;
+      border-radius: 4px;
+      box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2); }
+      .section-service .container .service-txt .text-group .p-group .service-icn span {
+        color: #4528DC;
+        font-size: 30px; }
+    .section-service .container .service-txt .text-group .p-group p {
+      margin-left: 20px; }
+  .section-service .container .service-txt input {
+    background: linear-gradient(-47deg, #8731E8, #4528DC);
+    width: 146px;
+    height: 52px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    margin-top: 20px; }
+
+.section-work-area {
+  background: linear-gradient(-47deg, #8731E8, #4528DC); }
+  .section-work-area .container {
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section-work-area .container .main-txt {
+      text-align: center;
+      margin-bottom: 40px; }
+      .section-work-area .container .main-txt h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #222222;
+        color: #fff;
+        margin-bottom: 20px; }
+      .section-work-area .container .main-txt p {
+        font-size: 14px;
+        color: #fff; }
+    .section-work-area .container .wrap-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .section-work-area .container .wrap-card .card {
+        width: 350px;
+        height: 224px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .section-work-area .container .wrap-card .card img {
+          width: 64px;
+          height: 64px;
+          margin-bottom: 14px; }
+        .section-work-area .container .wrap-card .card h3 {
+          color: #fff;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 14px; }
+        .section-work-area .container .wrap-card .card p {
+          color: #fff;
+          font-size: 14px; }
+      .section-work-area .container .wrap-card .btn-next span {
+        font-size: 40px;
+        color: #fff; }
+
+.section-interface .container {
+  height: 898px;
+  padding: 100px 0; }
+  .section-interface .container .interface-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px; }
+    .section-interface .container .interface-txt h2 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #222222; }
+    .section-interface .container .interface-txt .line {
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(-47deg, #8731E8, #4528DC);
+      margin: 20px 0; }
+    .section-interface .container .interface-txt p {
+      font-size: 14px;
+      color: #565656; }
+  .section-interface .container .interface-design {
+    display: flex; }
+    .section-interface .container .interface-design img {
+      width: 250px;
+      margin: 0 20px; }
+  .section-interface .container .pagenation {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+    .section-interface .container .pagenation .page {
+      width: 8px;
+      height: 8px;
+      background: #E5E5E5;
+      border-radius: 50%;
+      margin: 0 4px; }
+      .section-interface .container .pagenation .page:first-child {
+        background: linear-gradient(-47deg, #8731E8, #4528DC);
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
