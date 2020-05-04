@@ -320,4 +320,46 @@ a {
         background: linear-gradient(-47deg, #8731E8, #4528DC);
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
 
+.section-user .container {
+  height: 591px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .section-user .container .avatar {
+    width: 100px;
+    height: 100px; }
+    .section-user .container .avatar img {
+      border-radius: 50%; }
+  .section-user .container h3 {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+    margin-top: 20px; }
+  .section-user .container h5 {
+    font-size: 16px;
+    color: #222222;
+    margin-top: 4px; }
+  .section-user .container .star span {
+    font-size: 18px;
+    color: orange;
+    margin-top: 6px; }
+  .section-user .container p {
+    font-size: 14px;
+    color: #565656;
+    margin-top: 20px; }
+  .section-user .container .pagenation {
+    display: flex;
+    margin-top: 30px; }
+    .section-user .container .pagenation .page {
+      width: 8px;
+      height: 8px;
+      background: #E5E5E5;
+      border-radius: 50%;
+      margin: 0 4px; }
+      .section-user .container .pagenation .page:first-child {
+        background: linear-gradient(-47deg, #8731E8, #4528DC);
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5); }
+
 /*# sourceMappingURL=style.css.map */
