@@ -74,13 +74,14 @@ a {
 
 .visual .bg-shape {
   background: linear-gradient(-47deg, #8731E8, #4528DC);
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   transform: rotate(-38deg);
   position: absolute;
-  top: -300px;
-  left: 55%;
-  z-index: -100; }
+  top: -42%;
+  left: 50%;
+  z-index: -100;
+  margin-right: 5%; }
 .visual .container {
   height: 800px;
   display: flex;
@@ -102,6 +103,95 @@ a {
       border-radius: 8px;
       color: #fff;
       font-size: 15px;
-      font-weight: 600; }
+      font-weight: 600;
+      border: none; }
+
+.features .container {
+  height: 876px;
+  text-align: center;
+  padding: 100px 0; }
+  .features .container .features-txt {
+    margin-bottom: 60px; }
+    .features .container .features-txt h2 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #222222; }
+    .features .container .features-txt .line {
+      width: 80px;
+      height: 2px;
+      background-color: #4528DC;
+      margin: 15px auto; }
+    .features .container .features-txt p {
+      font-size: 14px;
+      color: #565656; }
+  .features .container .section-features ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .features .container .section-features ul li.card {
+      width: 350px;
+      height: 236px;
+      text-align: center;
+      padding: 36px 24px; }
+      .features .container .section-features ul li.card a img {
+        width: 68px; }
+      .features .container .section-features ul li.card a h3 {
+        font-size: 20px;
+        color: #222222;
+        font-weight: 700; }
+      .features .container .section-features ul li.card a p {
+        color: #565656;
+        font-size: 14px; }
+
+.section-discover {
+  background-color: #f6f9fe; }
+  .section-discover .container {
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0; }
+    .section-discover .container .discover-img {
+      width: 540px;
+      height: 550px;
+      text-align: center; }
+    .section-discover .container .discover-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .section-discover .container .discover-txt h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #222222;
+        margin-bottom: 20px; }
+      .section-discover .container .discover-txt .txt-desc .p-group {
+        display: flex;
+        margin: 10px 0; }
+        .section-discover .container .discover-txt .txt-desc .p-group span {
+          color: #4528DC;
+          margin-right: 10px; }
+        .section-discover .container .discover-txt .txt-desc .p-group p {
+          font-size: 14px;
+          font-weight: 500;
+          color: #565656; }
+      .section-discover .container .discover-txt .icons {
+        display: flex;
+        justify-content: flex-start; }
+        .section-discover .container .discover-txt .icons .icn-bg {
+          background-color: #fff;
+          width: 54px;
+          height: 54px;
+          border-radius: 4px;
+          box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 20px;
+          margin-left: 0; }
+          .section-discover .container .discover-txt .icons .icn-bg span {
+            font-size: 30px;
+            width: 21px;
+            height: 24px;
+            color: #4528DC; }
 
 /*# sourceMappingURL=style.css.map */
