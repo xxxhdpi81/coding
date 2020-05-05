@@ -269,7 +269,8 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        text-align: center; }
         .section-work-area .container .wrap-card .card img {
           width: 64px;
           height: 64px;
@@ -294,7 +295,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    text-align: center; }
     .section-interface .container .interface-txt h2 {
       font-weight: 700;
       font-size: 40px;
@@ -380,7 +382,8 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       .section-pricing .container .pricing-txt h2 {
         font-weight: 700;
         font-size: 40px;
@@ -448,6 +451,8 @@ a {
           border: none;
           position: absolute;
           top: 520px; }
+          .section-pricing .container .wrap-card .card input:hover {
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); }
     .section-pricing .container p {
       font-size: 16px;
       color: #222222;
@@ -460,19 +465,25 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .section-question .container .question-txt h2 {
-    font-weight: 700;
-    font-size: 40px;
-    color: #222222; }
-  .section-question .container .question-txt .line {
-    width: 80px;
-    height: 2px;
-    background-color: #4528DC;
-    margin-top: 10px; }
-  .section-question .container .question-txt p {
-    color: #565656;
-    font-size: 14px;
-    margin-top: 14px; }
+  .section-question .container .question-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .section-question .container .question-txt h2 {
+      font-weight: 700;
+      font-size: 40px;
+      color: #222222; }
+    .section-question .container .question-txt .line {
+      width: 80px;
+      height: 2px;
+      background-color: #4528DC;
+      margin-top: 10px; }
+    .section-question .container .question-txt p {
+      color: #565656;
+      font-size: 14px;
+      margin-top: 14px; }
   .section-question .container .wrap-table {
     margin-top: 50px;
     display: flex;
@@ -482,6 +493,10 @@ a {
     .section-question .container .wrap-table .table {
       width: 730px; }
       .section-question .container .wrap-table .table:hover .answer {
+        display: flex; }
+      .section-question .container .wrap-table .table:hover .arrow-icn .icn-right {
+        display: none; }
+      .section-question .container .wrap-table .table:hover .arrow-icn .icn-down {
         display: flex; }
       .section-question .container .wrap-table .table .question {
         height: 48px;
@@ -493,12 +508,129 @@ a {
           font-size: 14px;
           color: #565656;
           font-weight: 600; }
+        .section-question .container .wrap-table .table .question .icn-down {
+          display: none; }
       .section-question .container .wrap-table .table .answer {
-        display: none; }
+        display: none;
+        height: 100px;
+        border-bottom: 1px solid #ddd; }
         .section-question .container .wrap-table .table .answer h6 {
           font-size: 14px;
           color: #565656;
           margin-top: 20px;
           font-weight: 500; }
+
+.section-download {
+  position: relative; }
+  .section-download .bg-area {
+    background-image: url(../images/bg.jpeg);
+    height: 480px; }
+  .section-download .container {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 1000;
+    text-align: center; }
+    .section-download .container .download-txt {
+      text-align: center; }
+      .section-download .container .download-txt h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #222222;
+        color: #fff; }
+      .section-download .container .download-txt p {
+        color: #fff;
+        font-size: 14px; }
+    .section-download .container .download-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px; }
+      .section-download .container .download-btn .google-play {
+        width: 190px;
+        margin: 0 10px; }
+      .section-download .container .download-btn .appstore {
+        width: 190px; }
+    .section-download .container p {
+      font-size: 14px;
+      color: #fff; }
+
+.section-info {
+  background-color: #f6f9fe; }
+  .section-info .container {
+    height: 854px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section-info .container .info-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 80px; }
+      .section-info .container .info-txt h2 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #222222; }
+      .section-info .container .info-txt .line {
+        width: 80px;
+        height: 2px;
+        background-color: #4528DC;
+        margin-top: 10px; }
+      .section-info .container .info-txt p {
+        color: #565656;
+        font-size: 14px;
+        margin-top: 14px; }
+    .section-info .container .info-wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .section-info .container .info-wrap .info p {
+        font-size: 14px;
+        color: #565656; }
+      .section-info .container .info-wrap .info .btn-wrap a .info-btn {
+        height: 56px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px; }
+        .section-info .container .info-wrap .info .btn-wrap a .info-btn .btn-bg {
+          width: 45px;
+          height: 45px;
+          background: linear-gradient(-47deg, #8731E8, #4528DC);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px; }
+          .section-info .container .info-wrap .info .btn-wrap a .info-btn .btn-bg span {
+            color: #fff; }
+        .section-info .container .info-wrap .info .btn-wrap a .info-btn p {
+          font-size: 14px;
+          color: #565656;
+          margin-left: 10px; }
+      .section-info .container .info-wrap form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end; }
+        .section-info .container .info-wrap form label input {
+          border: none;
+          width: 540px;
+          height: 50px;
+          margin-bottom: 20px;
+          font-size: 16px;
+          color: #565656;
+          padding: 0 20px;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1); }
+          .section-info .container .info-wrap form label input:focus {
+            outline: none; }
+          .section-info .container .info-wrap form label input::placeholder {
+            font-size: 14px; }
+        .section-info .container .info-wrap form label .send-btn {
+          background-color: #4528DC;
+          width: 540px;
+          height: 60px;
+          color: #fff;
+          border-radius: 8px; }
 
 /*# sourceMappingURL=style.css.map */
