@@ -74,6 +74,111 @@ a {
       #header .container .gnb ul li a:hover {
         color: rgba(255, 255, 255, 0.8); }
 
+.footer .container {
+  height: 432px;
+  padding: 100px 0; }
+  .footer .container nav ul.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px; }
+    .footer .container nav ul.footer li p {
+      font-size: 14px;
+      color: #565656;
+      margin-top: 20px; }
+    .footer .container nav ul.footer li .wrap-sns {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px; }
+      .footer .container nav ul.footer li .wrap-sns .facebook {
+        width: 40px;
+        height: 40px;
+        background-color: #3B5997;
+        border-radius: 4px;
+        margin: 0 6px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer .container nav ul.footer li .wrap-sns .facebook img {
+          height: 20px; }
+      .footer .container nav ul.footer li .wrap-sns .twitter {
+        width: 40px;
+        height: 40px;
+        background-color: #1991DA;
+        border-radius: 4px;
+        margin: 0 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer .container nav ul.footer li .wrap-sns .twitter img {
+          width: 24px; }
+      .footer .container nav ul.footer li .wrap-sns .google {
+        width: 40px;
+        height: 40px;
+        background-color: #EA4335;
+        border-radius: 4px;
+        margin: 0 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer .container nav ul.footer li .wrap-sns .google img {
+          width: 30px; }
+      .footer .container nav ul.footer li .wrap-sns .vine {
+        width: 40px;
+        height: 40px;
+        background-color: #EA4335;
+        border-radius: 4px;
+        margin: 0 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .footer .container nav ul.footer li .wrap-sns .vine img {
+          height: 20px; }
+    .footer .container nav ul.footer .links ul h3 {
+      font-size: 20px;
+      color: #222222;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .footer .container nav ul.footer .links ul li {
+      margin-bottom: 10px; }
+      .footer .container nav ul.footer .links ul li a {
+        font-size: 14px;
+        color: #565656;
+        font-weight: 500; }
+    .footer .container nav ul.footer .help ul h3 {
+      font-size: 20px;
+      color: #222222;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .footer .container nav ul.footer .help ul li {
+      margin-bottom: 10px; }
+      .footer .container nav ul.footer .help ul li a {
+        font-size: 14px;
+        color: #565656;
+        font-weight: 500; }
+    .footer .container nav ul.footer .download h3 {
+      font-size: 20px;
+      color: #222222;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .footer .container nav ul.footer .download .google-play img {
+      width: 170px; }
+    .footer .container nav ul.footer .download .app-store img {
+      width: 170px; }
+  .footer .container nav .last-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 30px; }
+  .footer .container nav .copywright {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .footer .container nav .copywright p {
+      font-size: 14px;
+      color: #565656; }
+
 .visual .bg-shape {
   background: linear-gradient(-47deg, #8731E8, #4528DC);
   width: 1000px;

@@ -1,0 +1,157 @@
+.footer {
+    .container {
+        height: 432px;
+        padding: 100px 0;
+        nav {
+            ul.footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 80px;
+
+                li {
+                    img {
+
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $gray;
+                        margin-top: 20px;
+                    }
+                    .wrap-sns {
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-top: 20px;
+                        .facebook {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #3B5997;
+                            border-radius: 4px;
+                            margin: 0 6px;
+                            margin-left: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                height: 20px;
+                            }
+                        }
+                        .twitter{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #1991DA;
+                            border-radius: 4px;
+                            margin: 0 6px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 24px;
+
+                            }
+                        }
+                        .google {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #EA4335;
+                            border-radius: 4px;
+                            margin: 0 6px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 30px;
+                            }
+                        }
+                        .vine {
+                            width: 40px;
+                            height: 40px;
+                            background-color: #EA4335;
+                            border-radius: 4px;
+                            margin: 0 6px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                .links {
+                    ul {
+                        h3 {
+                            font-size: 20px;
+                            color: $black;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+                        li {
+                            margin-bottom: 10px;
+                            a {
+                                font-size: 14px;
+                                color: $gray;
+                                font-weight: 500;
+
+                            }
+                        }
+                    }
+                }
+                .help {
+                    ul {
+                        h3 {
+                            font-size: 20px;
+                            color: $black;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+                        li {
+                            margin-bottom: 10px;
+                            a {
+                                font-size: 14px;
+                                color: $gray;
+                                font-weight: 500;
+
+                            }
+                        }
+                    }
+                }
+                .download {
+                    h3 {
+                        font-size: 20px;
+                        color: $black;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+                    .google-play {
+                        img {
+                            width: 170px;
+                        }
+                    }
+                    .app-store {
+                        img {
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        .last-line {
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+            margin-bottom: 30px;
+        }
+        .copywright {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            p {
+                font-size: 14px;
+                color: $gray;
+            }
+        }
+
+
+        }
+    }
+}
