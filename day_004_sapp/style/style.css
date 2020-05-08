@@ -80,7 +80,7 @@ a {
   .footer .container nav ul.footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 80px; }
     .footer .container nav ul.footer li p {
       font-size: 14px;
@@ -141,7 +141,7 @@ a {
       font-weight: 600;
       margin-bottom: 10px; }
     .footer .container nav ul.footer .links ul li {
-      margin-bottom: 10px; }
+      padding: 10px 0; }
       .footer .container nav ul.footer .links ul li a {
         font-size: 14px;
         color: #565656;
@@ -152,7 +152,7 @@ a {
       font-weight: 600;
       margin-bottom: 10px; }
     .footer .container nav ul.footer .help ul li {
-      margin-bottom: 10px; }
+      padding: 10px 0; }
       .footer .container nav ul.footer .help ul li a {
         font-size: 14px;
         color: #565656;
