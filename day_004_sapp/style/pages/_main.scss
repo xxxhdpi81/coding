@@ -667,10 +667,15 @@
 
     .container {
         position: absolute;
-        top: 30%;
-        left: 30%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 1000;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .download-txt {
             text-align: center;
@@ -786,10 +791,9 @@
                 justify-content: flex-start;
                 align-items: flex-end;
                 label {
-                    input {
+                    .form-control {
                         border: none;
                         width: 540px;
-                        height: 50px;
                         margin-bottom: 20px;
                         font-size: 16px;
                         color: $gray;
@@ -802,6 +806,17 @@
                             font-size: 14px;
                         }
                     }
+                    input {
+                        height: 50px;
+                    }
+
+                    textarea {
+                        height: 150px;
+                        resize: none;
+                        padding: 20px !important;
+
+                    }
+
                     .send-btn {
                         background-color: $font-color;
                         width: 540px;

@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+#wrap {
+  padding-top: 60px; }
+  #wrap .container {
+    margin: 0 auto; }
+    #wrap .container .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff; }
+      .open-side-menu #wrap .container .header {
+        display: none; }
+      #wrap .container .header nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #wrap .container .header nav .menu {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          text-transform: uppercase;
+          margin: 0 15px;
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+          cursor: pointer; }
+          #wrap .container .header nav .menu:hover {
+            background-color: #f7f8f9; }
+    #wrap .container .side-menu {
+      position: fixed;
+      left: -320px;
+      top: 0;
+      bottom: 0;
+      z-index: 1500;
+      background-color: #fff;
+      width: 320px;
+      transition: .4s;
+      /*
+      .open-side-menu & {
+          left: 0;
+      }
+      */ }
+      #wrap .container .side-menu .btn-menu {
+        position: absolute;
+        left: 100%;
+        top: 40px;
+        height: 40px;
+        width: 40px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer; }
+        #wrap .container .side-menu .btn-menu span {
+          font-size: 24px;
+          color: #2b2b2b; }
+    #wrap .container .toggle {
+      position: fixed;
+      left: 0px;
+      top: 0;
+      bottom: 0;
+      z-index: 1500;
+      background-color: #fff;
+      width: 320px;
+      transition: .4s; }
+    #wrap .container .section {
+      height: 100vh; }
+      #wrap .container .section.section-a {
+        background: #ffbbbb; }
+      #wrap .container .section.section-b {
+        background: #b3fcff; }
+      #wrap .container .section.section-c {
+        background: #9dcaff; }
+    #wrap .container .back-top {
+      position: fixed;
+      right: 60px;
+      bottom: 80px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #08c;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

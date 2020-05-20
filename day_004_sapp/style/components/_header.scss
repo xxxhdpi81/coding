@@ -14,15 +14,21 @@
         .gnb {
             ul {
                 display: flex;
-                li {
+                align-items: center;
 
+                li {
                     a {
                         padding: 30px 20px;
                         font-size: 14px;
                         color: #fff;
                         font-weight: 600;
+
+                        display: flex;
+                        align-items: center;
+
                         &:hover {
                             color: rgba(255,255,255,.8);
+
                         }
                     }
 
