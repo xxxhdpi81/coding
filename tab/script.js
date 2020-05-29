@@ -3,7 +3,10 @@ $('#tab .nav .menu').on('click', function () {
 
     console.log(menuIndex);
 
+
     $('.content').hide();
     $('.content').eq(menuIndex).show();
+
+
 
 });

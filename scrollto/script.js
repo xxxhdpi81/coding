@@ -21,12 +21,14 @@ $('.back-top').on('click', function () {
     }, 600);
 } );
 
-/*
+
 $('.btn-menu').on('click', function () {
     $('html').toggleClass('open-side-menu');
 } )
-*/
 
+/*
 $('.btn-menu').on('click', function () {
     $('.side-menu').toggleClass('toggle');
 } )
+
+ */
