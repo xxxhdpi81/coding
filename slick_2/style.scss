@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+
+#wrap {
+  .container {
+    margin: 0 auto;
+    .header {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+
+        li {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          cursor: pointer;
+          &.on {
+            color: #1e9ee3;
+          }
+          &:hover {
+            background-color: #f8f8f8;
+          }
+        }
+      }
+    }
+
+    .visual {
+      .section {
+        &.a {
+          position: relative;
+          height: 100vh;
+          background-color: #f8d5d5;
+          .visual-banner {
+            .banner {
+              height: 100vh;
+              background: 50% 50% /cover no-repeat;
+              display: flex!important;
+              justify-content: center;
+              align-items: center;
+
+              &.A {
+                background-image: url(https://cdn.pixabay.com/photo/2020/04/21/18/49/tropical-5074304_1280.jpg);
+                h2 {
+                  color: #fff;
+                  font-size: 48px;
+                }
+
+
+              }
+              &.B {
+                background-image: url(https://cdn.pixabay.com/photo/2020/04/05/10/50/uganda-5005579_1280.jpg);
+                h2 {
+                  color: #fff;
+                  font-size: 48px;
+                }
+
+              }
+              &.C {
+                background-image: url(https://cdn.pixabay.com/photo/2020/05/26/07/43/skateboard-5221914_1280.jpg);
+                h2 {
+                  color: #fff;
+                  font-size: 48px;
+                }
+
+              }
+            }
+          }
+          .slick-arrow {
+            position: absolute;
+            top: 50%;
+            border: none;
+            transform: translateY(-30px);
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.slick-prev {
+              left: 100px;
+              color: #2b2b2b;
+
+            }
+            &.slick-next {
+              right: 100px;
+              color: #2b2b2b;
+            }
+          }
+          .slick-dots {
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+              width: 12px;
+              height: 12px;
+              background-color: #a1a1a1;
+              border-radius: 50%;
+              margin: 0 12px;
+              cursor: pointer;
+              &.slick-active {
+                background-color: #fff;
+              }
+
+
+              button {
+                display: none;
+              }
+            }
+          }
+        }
+        &.b {
+          height: 100vh;
+          background-color: rgb(201, 240, 245);
+        }
+        &.c {
+          height: 100vh;
+          background-color: #f8e5a2;
+        }
+      }
+
+    }
+    .back-top {
+      position: fixed;
+      bottom: -80px;
+      right: 60px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: 0.2s;
+      &.appear {
+        bottom: 60px;
+      }
+
+    }
+    .side-bar {
+      position: fixed;
+      top: 100;
+      left: -320px;
+      bottom: 0;
+      z-index: 1500;
+      width: 320px;
+      height: 100vh;
+      background-color: #fff;
+      transition: 0.3s;
+      .close & {
+        left: 0;
+      }
+
+      .menu-btn {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 100%;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}

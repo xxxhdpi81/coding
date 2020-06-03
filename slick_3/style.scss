@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+
+#wrap {
+  .container {
+    margin: 0 auto;
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 70px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+
+        li {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          cursor: pointer;
+          &.on {
+            color: rgb(21, 214, 238);
+          }
+          &:hover {
+            background-color: #f8f8f8;
+          }
+        }
+      }
+    }
+
+    .visual {
+      .section {
+        &.a {
+          position: relative;
+          height: 100vh;
+          background-color: #f8d5d5;
+          .bg {
+            .bg-a {
+              height: 100vh;
+              background: url(https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% /cover no-repeat;
+            }
+            .bg-b {
+              height: 100vh;
+              background: url(https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% /cover no-repeat;
+            }
+            .bg-c {
+              height: 100vh;
+              background: url(https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 50% 50% /cover no-repeat;
+            }
+          }
+          .slick-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 1000;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            padding: 40px 40px;
+            &.slick-prev {
+              left: 50px;
+            }
+            &.slick-next {
+              right: 50px;
+            }
+          }
+        }
+        &.b {
+          height: 100vh;
+          background-color: rgb(201, 240, 245);
+        }
+        &.c {
+          height: 100vh;
+          background-color: #f8e5a2;
+        }
+      }
+    }
+    .back-top {
+      position: fixed;
+      bottom: 60px;
+      right: 60px;
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: 0.2s;
+      &.appear {
+        bottom: 60px;
+        right: 60px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .side-bar {
+      position: fixed;
+      top: 0;
+      left: -320px;
+      bottom: 0;
+      z-index: 1500;
+      width: 320px;
+      height: 100vh;
+      background-color: #fff;
+      transition: 0.3s;
+      .close & {
+        left: 0;
+      }
+
+      .menu-btn {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 100%;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}

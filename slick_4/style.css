@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  position: relative; }
+  body .visual-banner .banner-01 {
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_1280.jpg) 50% 50%/cover no-repeat; }
+  body .visual-banner .banner-02 {
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2020/05/24/09/26/rain-5213306_1280.jpg) 50% 50%/cover no-repeat; }
+  body .visual-banner .banner-03 {
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2020/05/21/16/04/turkey-5201498_1280.jpg) 50% 50%/cover no-repeat; }
+  body .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #4f36d9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    body .slick-arrow:hover {
+      background-color: #4029bf; }
+    body .slick-arrow.slick-prev {
+      left: 50px;
+      color: #fff;
+      font-size: 26px; }
+    body .slick-arrow.slick-next {
+      right: 50px;
+      color: #fff;
+      font-size: 26px; }
+  body .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .slick-dots li {
+      width: 30px;
+      height: 6px;
+      background-color: #fff;
+      margin: 0 6px;
+      border-radius: 10px;
+      transition: 0.2s; }
+      body .slick-dots li.slick-active {
+        width: 80px;
+        background-color: #4f36d9; }
+      body .slick-dots li button {
+        display: none; }
+
+/*# sourceMappingURL=style.css.map */
